@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    text-align: center;
+}
+
+h1    {
+    background-color:LightBlue;
+    border:double 3px SlateBlue;
+    color:SteelBlue;
+    font-family:"Century Gothic";
+    font-size:2.5em;
+    font-weight:600;
+    text-align: center;
+}
+
+table {
+    background-color:LemonChiffon;
+    border:outset 6px SlateBlue;
+    text-align: center;
+}
+
+td    {
+    background-color:LemonChiffon;
+    border:solid 2px SlateBlue;
+    color:SlateBlue;
+    height:30px;
+    text-align:center;
+    font-family:"Lucida Sans";
+    font-size:1em;
+    font-weight:500;
+    width:25px;
+}
+
+.On    {
+    background-color:SlateBlue;
+    border-color:Gold;
+    border-width:2px;
+    color:Gold;
+    text-align: center;
+    text-align: center;
+}
+
+.Off   {
+    background-color:LemonChiffon;
+    border-color:SlateBlue;
+    border-width:2px;
+    color:SlateBlue;
+    text-align: center;
+}
