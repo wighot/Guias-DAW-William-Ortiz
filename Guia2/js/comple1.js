@@ -1,48 +1,53 @@
-var num = new Array;
-    var impar = new Array;
-    var par = new Array;
-    var mayor = new Array;
-    var menor = new Array;
-    var sum=0, sumn=0, sumt=0;
-    var max, i, contenido="", j=0, k=0;
-    do{
-        max = prompt("Digite un número entero", "");
-        continue;
-    }while(isNaN(num));
-    var datos = document.getElementById('dato');
+var num, i, j, k, l, cons, conti, contp, contt, total, impar, par, menor, mayor;
 
-    with (document){
-        //contenido += "<h1>Hola mundo</h1>\n";
-        for(i=0; i<max; i++){
-            num[i];
-            if(i%2 == 0){
-                j++;
-            }
-            if(i%2 == 1){
-                k++;
-                //sumn += impar[i];
-                //impar[k];
-            }
-        }
+do{
+    num = prompt("Digite un numero entero: ");
+    if (num <0)
+    alert("ERRO...Digite un numero mayor a cero");
+}while(num<0);
 
-        for(i=0; i<max-1; i++){
-            for(m=i+1; m<max; m++){
-                if(num[i]>max[m]){
-                    mayor[i];
-                }
-                //if(num)
-            }
-        }
-        //sumt += num[i];
-        contenido += "<h1>El número ingresado es: "+max+" </h1>";
-        contenido += "<h1>La cantidad de cifras son: "+i+"</h1>";
-        contenido += "<h1>La cantidad de cifras impares son: "+ k +"</h1>";
-        contenido += "<h1>La cantidad de cifras pares son: "+ j +"</h1>";
-        contenido += "<h1>La suma de cifras impares es: "+ sumn +"</h1>";
-        contenido += "<h1>La suma de cifras pares es: "+ sum +"</h1>";
-        contenido += "<h1>La suma de todas las cifras es: "+sumt+"</h1>";
-        contenido += "<h1>La cifra mayor  es: "+mayor+"</h1>";
-        contenido += "<h1>La cifra menor  es: "+mayor+"</h1>";
+cons = num.split('');
 
-    }
-    datos.innerHTML = contenido;
+par=0;
+impar=0;
+k=0;
+j=0;
+conti=0;
+contp=0;
+total=0;
+contt=0;
+mayor=0;
+menor=10;
+
+for(i=0; i <= cons.length; i++){
+    if(cons[i] % 2 == 0){
+        contp = parseInt(cons[i]);
+        par = par + contp;
+        k++;
+    }else if(cons[i] % 2 == 1){
+        conti = parseInt(cons[i]);
+        impar = impar + conti;
+        j++
+}
+if(contt=cons[i]){
+    contt = parseInt(cons[i]);
+    total = total + contt;
+}
+if(cons[i]>=mayor){
+    mayor=cons[i];
+}else if(cons[i]<=menor ){
+    menor=cons[i]
+}
+}i=i-1
+
+document.write("<h1>cantidad de cifras: "+i+"</h1>");
+document.write("<h1>cantidad de cifras impares: "+j+"</h1>");
+document.write("<h1>cantidad de cifras pares: "+k+"</h1>");
+document.write("<h1>suma de cifras impares: "+impar+"</h1>");
+document.write("<h1>suma de cifras pares: "+par+"</h1>")
+document.write("<h1>suma de todas las cifras: "+total+" </h1>")
+document.write("<h1>cifra mayor: "+mayor+" </h1>")
+document.write("<h1>cifra menor: "+menor+" </h1>")
+
+
+ 
