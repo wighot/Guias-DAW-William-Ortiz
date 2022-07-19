@@ -1,4 +1,14 @@
 
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+}
+
+body{
+    background-color: black;
+    text-align: center;
+}
+
 html{
     text-align: center;
 }
