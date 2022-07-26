@@ -1,0 +1,14 @@
+body{
+    font-family: 'Century Gothic';
+    text-align: center;
+    background-color: bisque;
+    margin: 0 auto;
+}
+
+p{
+	font-size: 18px;
+	text-shadow: 1px 1px 1px #fff;
+}
+div{
+    padding: 50px;
+}
