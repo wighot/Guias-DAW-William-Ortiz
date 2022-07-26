@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/calculadora.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complementario 1</title>
+</head>
+<body>
+<HR>
+<div class="calculadora">
+
+<form action="#" name="calculadora" id="calculadora">
+    <br>
+    <H2>Calculadora</H2>
+    <input type="text" id="valor_numero" maxlength="20" value="0" class="textoPantalla" readonly="true">
+<p>
+<input type="button" class="largo" value="Backspace" />
+<input type="button" class="largo" value="CE" />
+<input type="button" id="C" value="C" class="largo" onclick="darC()">
+</p>
+<p>
+    <input type="button" id="C" value="MC" onclick="darC()" />
+    <input type="button" value="MR" />
+    <input type="button" value="MS" />
+    <input type="button" value="M+" />
+</p>
+
+<p>
+    <input type="button" id="7" value="7" onclick="darNumero('7')">
+    <input type="button" id="8" value="8" onclick="darNumero('8')">
+    <input type="button" id="9" value="9" onclick="darNumero('9')">
+    <input type="Button" id="Dividir" value="/" onclick="operar(4)">
+    <input type="button" value="sqrt" onclick="operar(6)"/>
+</p>
+
+<p>
+    <input type="button" id="4" value="4" onclick="darNumero('4')">
+    <input type="button" id="5" value="5" onclick="darNumero('5')">
+    <input type="button" id="6" value="6" onclick="darNumero('6')">
+    <input type="Button" id="Multiplicar" value="x" onclick="operar(3)">
+    <input type="button" value="%" onclick="operar(7)"/>
+</p>
+
+<p>
+    <input type="button" id="1" value="1" onclick="darNumero('1')"/>
+    <input type="button" id="2" value="2" onclick="darNumero('2')" />
+    <input type="button" id="3" value="3" onclick="darNumero('3')"/>
+    <input type="Button" id="Restar" value="-" onclick="operar(2)">
+    <input type="button" value="1/x" />
+</p>
+<p>
+    <input type="button" id="0" value="0" onclick="darNumero('0')">
+    <input type="button" id="cuadradonum" value="x2" onclick="operar(5)"/>
+    <input type="button" id="," value="." onclick="darComa()">
+    <input type="button" id="Sumar" value="+" onclick="operar(1)">
+    <input type="button" id="igual" value="=" onclick="esIgual()">
+</p>
+</form>
+</div>
+<script src="js/class.js"></script>
+</body>
+</html>
