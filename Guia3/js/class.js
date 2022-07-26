@@ -58,7 +58,7 @@ switch (opera){
     break;
 
     case 4:
-        opera = num2 / num1;
+        num1 = num2 / num1;
     break;
 
     case 5:
