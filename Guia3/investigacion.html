@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Investigación</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/inve.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    </head>
+    <body>
+    <div class="comple">
+        <h1>¿Que son las clasulas en Javascript?</h1>
+        <p>Una clausura o closure es una función que guarda referencias del estado adyacente (ámbito léxico). 
+            En otras palabras, una clausura permite acceder al ámbito de una función exterior desde una función
+            interior. En JavaScript, las clausuras se crean cada vez que una función es creada
+        </p>
+        <br>
+        <h2>¿Para que sirven?</h2>
+        <p>
+            Explicándolo de otra manera, con las clausuras en JavaScript se logra que una función
+             interna tenga acceso al alcance de una función externa.
+        </p>
+        <h2>¿Para que puede servir?</h2>
+        <p>Cuando nos acercamos por primera vez al concepto de closure es habitual encontrarnos con problemas a la hora de entenderlo,
+           a pesar de que seguramente en muchas ocasiones los habremos utilizado sin saberlo
+        </p>
+
+        <h1>Ejemplos</h1>
+        <h2>Mostrar el nombre mozilla</h2>
+        <p>function creaFunc() {</p>
+           <p> var nombre = "Mozilla";</p>
+            <p>function muestraNombre() {</p>
+              <p>alert(nombre);</p>
+            <p>}</p>
+            <p>return muestraNombre;</p>
+          <p>}</p>
+          <p>var miFunc = creaFunc();</p>
+          <p>miFunc();</p>
+
+          <br>
+
+          <h2>Sumar numeros especifico</h2>
+          <p>function creaSumador(x) {</p>
+            <p>return function(y) {</p>
+             <p> return x + y;</p>
+            <p>};</p>
+          <p>}</p>
+          <p>var suma5 = creaSumador(5);</p>
+          <p>var suma10 = creaSumador(10);</p>
+          <p>console.log(suma5(2));  // muestra 7</p>
+         <p> console.log(suma10(2));</p>
+
+         <br>
+
+          <h2>Sumar numeros especifico</h2>
+          <p>function makeSizer(size) {
+            <p>return function() {</p>
+              <p>document.body.style.fontSize = size + 'px';</p>
+            <p>};</p>
+          <p>}</p>
+          <p>var size12 = makeSizer(12);</p>
+          <p>var size14 = makeSizer(14);</p>
+          <p>var size16 = makeSizer(16);</p>
+    </div>
+
+    <a href="../Guia3/js/inves.js" class="btn btn-dark">Ver ejemplo practico</a>
+    <script src="js/inves.js"></script>
+    <br>
+    <br>
+
+    </body>
+</html>
