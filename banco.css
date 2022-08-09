@@ -1,0 +1,31 @@
+html{
+   text-align: center;
+}
+body{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(69, 69, 69);
+    color: white;
+}
+
+p{
+    font-size: 18px;
+}
+
+form{
+    width: 400px;
+    background-color: rgb(186, 186, 186);
+    border-radius: 5px;
+    margin: 0 auto;
+    
+}
+
+input{
+    border-radius: 5px;
+    text-align: center;
+}
+
+fieldset{
+    width: 600px;
+    margin: 0 auto;
+}
