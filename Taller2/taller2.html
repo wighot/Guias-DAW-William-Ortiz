@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Don pollo</title>
+<link rel="icon" href="dp.png">
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/taller2.css" />
+<link rel="stylesheet" href="css/comentarios.css" />
+</head>
+<body>
+<br>
+<div align="center"><img src="dp.png"></div>
+<form action="javascript:void(0);" class="demoForm" id="pizzaForm">
+    <fieldset>
+        <h2>Menú de opciones</h2>
+     
+        
+        <p id="pizza_toppings">
+            
+            <label>Combos Don Pollo:</label><br><br>
+
+            <label><input type="checkbox" name="size" value="0.00" checked="checked"/> Ninguno</label><br>
+
+            <label><input type="checkbox"  name="mushrooms" value="7.25"/> Super Combo
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $7.25</label><br>
+
+            <label><input type="checkbox"  value="5.75" /> Combo personal
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $5.75</label><br>
+            <label><input type="checkbox" name="size" value="3.50" /> Combo infantil
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  $3.50</label><br>
+
+            <br><label>Productos adicional:</label><br><br>
+
+            <label><input type="checkbox" name="mushrooms" value="1.50" /> Ensalada
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $1.50</label><br>
+           
+
+            <label><input type="checkbox" name="onions" value="1.25" /> Papas frita
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $1.50</label><br>
+
+            <label><input type="checkbox" name="black olives" value="1.75" /> Pieza de pollo grande
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $1.75
+            </label><br>
+            <label><input type="checkbox" name="ham" value="1.50" /> Pieza de pollo mediana
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $1.50
+            </label><br>
+            <label><input type="checkbox" name="pepperoni" value="1.25" /> Pieza de pollo pequeña
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $1.25 </label><br>
+
+            <br><label>Bebidas:</label><br><br>
+
+            <label><input type="checkbox" name="mushrooms" value="1.50" /> Bebida grande 
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+                &nbsp  
+                $1.50</label><br>
+            <label><input type="checkbox" name="onions" value="1.25" /> Bebida mediana  
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp  
+                $1.25</label><br>
+            <label><input type="checkbox" name="black olives" value="1.00" /> Bebida pequeña  
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp   
+                $1.00 </label><br>
+            <label><input type="checkbox" name="ham" value="0.50" /> Café  
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp      
+                $0.50 </label><br>
+            <label><input type="checkbox" name="pepperoni" value="1.25" /> Postre  
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  
+                $1.25</label><br>
+
+            <input type="hidden" name="sz_tot" value="0.00" />
+            <input type="hidden" name="tops_tot" value="0.00" />
+        </p>
+    
+        <p><label>Total: $<input type="text" name="total" class="num" value="0.00" readonly="readonly" /></label></p>
+        <br>
+        <p><input class="button" type="submit" name="Ordenar" value="Ordenar" /></p> 
+        <br>
+    </fieldset>
+</form>
+<a  href="comentarios.html">Agregar comentarios</a>
+<br>
+</body>
+<script src="js/menu.js"></script>
+</html>

@@ -1,0 +1,150 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: bisque;
+    width: 100%;
+}
+
+#box {
+  background: hsl(210, 30%, 0%) radial-gradient( hsl(210, 30%, 20%), hsl(210, 30%, 0%));
+  font-weight: bold;
+  padding: 20px auto;
+  text-align: center;
+  -webkit-backface-visibility: hidden; /* fixes flashing */
+}
+
+input[type="checkbox"] + label {
+    font-weight: bold;
+    line-height: 3em;
+    color: #ccc;
+}
+input[type="checkbox"]:checked + label {
+    color: #0fbf12;
+}
+
+h1{
+    text-align: center;
+}
+ img{
+    text-align: center;
+    margin: auto;
+ }
+#flashlight {
+    color: hsla(0,0%,0%,0);
+    font-size: 3em;
+    perspective: 80px;
+    outline: none;
+    
+}
+
+fieldset{
+    background-color: rgb(255, 231, 212);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+legend{
+    border: #111;
+}
+
+/* flash ------------------------------------------------------ */
+#flash {
+  display: inline-block;
+  text-shadow: #bbb 0 0 1px, 
+               #fff 0 -1px 2px, 
+               #fff 0 -3px 2px, 
+               rgba(0,0,0,0.8) 0 30px 25px;
+  transition: margin-left 0.3s cubic-bezier(0, 1, 0, 1);
+}
+    
+#box:hover #flash {
+  margin-left: 20px;
+  transition: margin-left 1s cubic-bezier(0, 0.75, 0, 1);
+}
+
+
+/* light ------------------------------------------------------ */
+#light {
+  display: inline-block;
+  text-shadow: #111 0 0 1px, rgba(255,255,255,0.1) 0 1px 3px;
+}
+
+#box:hover #light {
+  text-shadow: #fff 0 0 4px, #fcffbb 0 0 20px;
+  transform: rotateY(-60deg);
+  transition: transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
+}
+
+ul {
+    margin:1.4em 0 2em;
+}
+
+ul li {
+    margin-bottom:.8em;
+}
+
+form.demoForm fieldset {
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    width: 30%;
+}
+
+h2{
+    text-align: center;
+    color:rgba(73, 73, 73, 0.966);
+}
+form.demoForm p {
+    line-height: 1.1;
+    padding:0 6px;
+}
+form.demoForm legend {
+    margin-left:6px;
+}
+
+form.demoForm label {
+    margin-right: .8em;
+}
+form.demoForm input {
+    vertical-align: bottom;
+    padding:0;
+    margin:0; 
+}
+form.demoForm input.num {
+    text-align: right;
+    width: 50px;
+}
+
+form.demoForm input[type=submit] {
+    padding:1px 4px;
+}
+
+input[type=submit] {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    background-color: #111;
+    padding: 5rem;
+    margin: 1rem;
+    text-align: center;
+    color: white;
+    border-radius: 3px;
+}
+
+.button:hover {
+    background-color: #f06c14; /* Green */
+    color: white;
+    border: none;
+}
+
+a {
+    background: rgb(14, 14, 14);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 5px 5px 5px;
+    display: block;
+    margin: 1rem;
+    border-radius: 10px 10px;
+    text-align: center;
+    transition: 2s;
+}
+
+a:hover {
+    background: rgb(255, 102, 32);
+}

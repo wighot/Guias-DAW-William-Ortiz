@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Comentarios Don Pollo</title>
+<meta charset="utf-8" />
+<link rel="icon" href="dp.png">
+<link rel="stylesheet" href="css/comentario.css">
+<script src="js/comentarios.js"></script>
+</head>
+<body>
+<header>
+</header>
+<br><br>
+<div align="center"><img src="dp.png"></div>
+<a ><input style="text-align:center;" class="buttom1" type="submit" value="Comentarios" onclick="showDiv1()"></a>
+<br>
+<br>
+<a><input style="text-align:center;"  class="buttom2" type="submit" value="Ocultar comentarios" onclick="showDiv2()"></a>
+
+<div id="div1" style="display:none">
+    <form action="javascript:void(0);">
+    <fieldset id="nodeform">
+    <legend><span>Añada un comentario</span></legend>
+    <label for="textarea" class="txa">Ingrese su comentario:</label>
+    <textarea name="textArea" id="textArea" class="textareabox" rows="8"
+    cols="45"></textarea><br />
+    <input type="radio" name="nodeAction" id="nodeAction" />
+    <label for="nodeAction">Añadir comentario</label>
+    <input type="radio" name="nodeAction" id="nodeAction" />
+    <label for="nodeAction">Eliminar comentario</label>
+    <input type="radio" name="nodeAction" id="nodeAction" />
+    <label for="nodeAction">Insertar antes de un comentario</label><br />
+    <label for="grafCount">Comentarios:</label>
+    <select name="grafCount" id="grafCount"><br />
+    </select><br />
+    <input type="submit" value="Enviar" class="boton" />
+    </fieldset>
+    </form>
+</div>
+<div id="modificable">
+</div>
+</body>
+</html>
